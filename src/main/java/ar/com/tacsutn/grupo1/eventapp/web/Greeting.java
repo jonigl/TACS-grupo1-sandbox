@@ -1,4 +1,4 @@
-package hello;
+package ar.com.tacsutn.grupo1.eventapp.web;
 
 public class Greeting {
 

@@ -1,18 +1,19 @@
-package hello;
+package ar.com.tacsutn.grupo1.eventapp.web;
 
-import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class GreetingController {
+import java.util.concurrent.atomic.AtomicLong;
 
-    private static final String template = "Hello, %s!";
+@RestController
+public class EventController {
+
+    private static final String template = "This is an event, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
+    @RequestMapping("/event")
+    public Greeting greeting(@RequestParam(value="name", defaultValue="default") String name) {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }

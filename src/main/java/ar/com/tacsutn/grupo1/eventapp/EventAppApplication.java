@@ -1,12 +1,12 @@
-package hello;
+package ar.com.tacsutn.grupo1.eventapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class EventAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(EventAppApplication.class, args);
     }
 }
